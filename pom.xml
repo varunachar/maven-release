@@ -354,6 +354,16 @@
 		<name>Trelta</name>
 		<url>www.trelta.com</url>
 	</organization>
+	<developers>
+		<developer>
+			<id>varunachar</id>
+			<email>achar_varun@hotmail.com</email>
+			<name>Varun Achar</name>
+			<roles>
+				<role>Founder</role>
+			</roles>
+		</developer>
+	</developers>
 	<scm>
 		<url>https://github.com/varunachar/maven-release.git</url>
 		<connection>scm:git:https://github.com/varunachar/maven-release.git</connection>
