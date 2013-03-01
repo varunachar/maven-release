@@ -369,4 +369,10 @@
 		<connection>scm:git:https://github.com/varunachar/maven-release.git</connection>
 		<developerConnection>scm:git:https://github.com/varunachar/maven-release.git</developerConnection>
 	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
 </project>
