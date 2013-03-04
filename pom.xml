@@ -5,12 +5,12 @@
 	<artifactId>clinic</artifactId>
 	<name>Parent POM for Clinic portal</name>
 	<packaging>pom</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<scm>
 		<url>https://github.com/varunachar/maven-release.git</url>
 		<connection>scm:git:https://github.com/varunachar/maven-release.git</connection>
 		<developerConnection>scm:git:https://github.com/varunachar/maven-release.git</developerConnection>
-	  <tag>vclinic-1.0.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
