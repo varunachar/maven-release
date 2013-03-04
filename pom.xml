@@ -13,6 +13,12 @@
 		<developerConnection>scm:git:https://github.com/varunachar/maven-release.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>ec2</id>
+			<url>scpexe://www.trelta.com/trelta/deploy/projects/</url>
+		</repository>
+	</distributionManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
@@ -178,12 +184,6 @@
 					<value>deploy</value>
 				</property>
 			</activation>
-			<distributionManagement>
-				<repository>
-					<id>ec2</id>
-					<url>scpexe://www.trelta.com/trelta/deploy/projects/</url>
-				</repository>
-			</distributionManagement>
 			<build>
 				<plugins>
 					<plugin>
@@ -205,19 +205,18 @@
 					<value>live</value>
 				</property>
 			</activation>
-			<distributionManagement>
-				<repository>
-					<id>ec2</id>
-					<url>scpexe://www.trelta.com/var/lib/tomcat7/webapps</url>
-				</repository>
-			</distributionManagement>
 			<build>
 				<finalName>ROOT</finalName>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-deploy-plugin</artifactId>
-						<version>2.7</version>
+						<groupId>org.apache.tomcat.maven</groupId>
+						<artifactId>tomcat7-maven-plugin</artifactId>
+						<version>2.1</version>
+						<configuration>
+							<url>http://www.trelta.com:8080/manager/text</url>
+							<server>tomcat</server>
+							<path>/Clinic</path>
+						</configuration>
 					</plugin>
 				</plugins>
 			</build>
