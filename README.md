@@ -56,9 +56,10 @@ tag your code with appropriate versions in git too.
 <code>mvn clean install tomcat7:deploy -Denv=live</code><br/>
 If an earlier version of the app is already deployed on tomcat then use:<br/>
 <code>mvn clean install tomcat7:redeploy -Denv=live</code>
+</p>
 
 Usage notes
 ===========
-Once you are ready to make your release, make sure you run your Live profile immediately after the Deploy profile since this will
-ensure that correct versions are uploaded to live instead of snapshot versions. 
+<p>Once you are ready to make your release, make sure you run your Live profile immediately after the Deploy profile since this will
+ensure that correct versions are uploaded to live instead of snapshot versions.
 </p>
