@@ -33,26 +33,26 @@ The parent pom.xml defines 3 profiles which are used for deploying the project t
 <p><b>Development</b> : This is your local environment. Maven will create war and upload it to your local server.
 <br/>
 To use this profile use:<br />
-<code>mvn clean install tomcat7:deploy -Denv=dev</code>
+<code>mvn clean install tomcat7:deploy -Denv=dev</code><br/>
 If a earlier version of the app is already deployed on tomcat then use:
-<code>mvn clean install tomcat7:redeploy -Denv=dev</code>
+<code>mvn clean install tomcat7:redeploy -Denv=dev</code><br/>
 <b>NOTE</b>: This command will not start your tomcat, but will simply deploy. Please ensure your tomcat is already
 running prior to issuing this command
 </p>
 <br>
 <p><b>Deploy</b> : Your artifacts will be deployed to your distribution repository.
 <br>
-To use this profile use:
-<code>mvn clean install release:prepare -Denv=dev</code>
-<code>release:preform -Denv=dev</code>
+To use this profile use:<br/>
+<code>mvn clean install release:prepare -Denv=dev</code><br/>
+<code>release:preform -Denv=dev</code><br/>
 <b>NOTE:</b> In order to do a dry run and check if everythings is fine before a release use add --dryRun=true
 to the above. Also note, that this expects all code to be committed into git, else it will fail. This will automatically
 tag your code with appropriate versions in git too.
 </p>
 <br>
 <p><b>Live</b>: This is your live server. Instead of your local tomcat instance, your live tomcat will be used.
-<br>To use this profile use:
-<code>mvn clean install tomcat7:deploy -Denv=live</code>
-If a earlier version of the app is already deployed on tomcat then use:
+<br>To use this profile use:<br/>
+<code>mvn clean install tomcat7:deploy -Denv=live</code><br/>
+If a earlier version of the app is already deployed on tomcat then use:<br/>
 <code>mvn clean install tomcat7:redeploy -Denv=live</code>
 </p>
