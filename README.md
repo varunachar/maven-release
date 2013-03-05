@@ -62,4 +62,10 @@ Usage notes
 ===========
 <p>Once you are ready to make your release, make sure you run your Live profile immediately after the Deploy profile since this will
 ensure that correct versions are uploaded to live instead of snapshot versions.
+Recommended way to completely automate the deployment process would be to issue the deploy and live profiles together
+like so:<br>
+<code>mvn clean install release:prepare tomcat7:deploy release:perform -Pdeploy,live</code><br/>
+If the artifact is already running on the tomcat then use tomcat7:redeploy instead.<br/>
+or<br>
+<code>mvn clean install release:prepare tomcat7:undeploy tomcat7:deploy release:perform -Pdeploy,live</code> 
 </p>
