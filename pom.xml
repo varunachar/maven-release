@@ -16,7 +16,7 @@
 	<distributionManagement>
 		<repository>
 			<id>ec2</id>
-			<url>scpexe://www.trelta.com/trelta/deploy/projects/</url>
+			<url>scpexe://www.trelta.com/home/ec2-user/trelta/deploy/projects/</url>
 		</repository>
 	</distributionManagement>
 	<properties>

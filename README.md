@@ -40,7 +40,8 @@ If an earlier version of the app is already deployed on tomcat then use:<br/>
 running prior to issuing this command
 </p>
 <br>
-<p><b>Deploy</b> : Your artifacts will be deployed to your distribution repository.
+<p><b>Deploy</b> : Your artifacts will be deployed to your distribution repository. Edit distributionManangement
+tag to one which is appropriate for your organization.
 <br>
 To use this profile use:<br/>
 <code>mvn clean install release:prepare -Denv=dev</code><br/>
