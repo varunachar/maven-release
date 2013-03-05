@@ -34,7 +34,7 @@ The parent pom.xml defines 3 profiles which are used for deploying the project t
 <br/>
 To use this profile use:<br />
 <code>mvn clean install tomcat7:deploy -Denv=dev</code><br/>
-If a earlier version of the app is already deployed on tomcat then use:
+If an earlier version of the app is already deployed on tomcat then use:<br/>
 <code>mvn clean install tomcat7:redeploy -Denv=dev</code><br/>
 <b>NOTE</b>: This command will not start your tomcat, but will simply deploy. Please ensure your tomcat is already
 running prior to issuing this command
@@ -53,6 +53,6 @@ tag your code with appropriate versions in git too.
 <p><b>Live</b>: This is your live server. Instead of your local tomcat instance, your live tomcat will be used.
 <br>To use this profile use:<br/>
 <code>mvn clean install tomcat7:deploy -Denv=live</code><br/>
-If a earlier version of the app is already deployed on tomcat then use:<br/>
+If an earlier version of the app is already deployed on tomcat then use:<br/>
 <code>mvn clean install tomcat7:redeploy -Denv=live</code>
 </p>
